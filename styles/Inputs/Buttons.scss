@@ -1,0 +1,22 @@
+.btn {
+  padding: 0rem 1rem;
+  border-radius:30rem;
+  border: 0px;
+  font-size: 0.9rem;
+  display:flex;
+  align-items: center;
+  transition: filter 0.1s;
+  height:2.5rem;
+}
+.btn:hover {
+  cursor: pointer;
+  filter: brightness(1.2);
+}
+.btn--green {
+  color: white;
+  background-color:#47851e;
+}
+.btn__icon {
+  font-size:1.5rem;
+  margin:3px;
+}

@@ -1,0 +1,142 @@
+body, button {
+  font-family: 'Poppins', sans-serif;
+}
+
+$color-primary: #1d3652;
+$color-secondary: #5177b6;
+$color-secondary--darker: #365486;
+$color-tertiary: #47851e;
+$color-horizontalRule: #eeeeee;
+$color-sectionHeader: black;
+$color-text: black;
+$pageWidth: 1200px;
+
+
+/** Font awesome **/
+
+@import "fontawesome/css/fontawesome";
+@import "fontawesome/css/brands";
+@import "fontawesome/css/solid.css";
+
+/** Google Fonts **/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+/** Layout **/
+
+@import "Navigation";
+@import "Footer";
+
+/** Post view **/
+
+@import "postPage" ;
+
+/** Featured Posts Widget **/
+
+@import "FeaturedPosts";
+
+/** Post List Widget **/
+
+@import "PostList";
+
+/** Mailing List Widget **/
+
+@import "MailingList";
+
+/** Inputs **/
+
+@import "Inputs/Buttons";
+
+@import "Inputs/TextInput";
+
+
+
+a {
+  text-decoration: none;
+  color: cornflowerblue;
+}
+* {
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
+
+/** Layout **/
+
+.pageBound {
+  max-width: $pageWidth;
+  width:100%;
+  margin: 0 auto;
+  padding: 0rem 1rem;
+}
+
+.pageLayout {
+  margin-top:2rem;
+  display:flex;
+  flex-direction: row;
+}
+
+.pageLayout__main {
+  flex-grow: 1;
+}
+
+.pageLayout__sidebar {
+    max-width: 20rem;
+    min-width: 20rem;
+    padding: 0rem 2rem;
+}
+
+/** Logo **/
+
+.logoText {
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: left;
+}
+
+.logoText > a {
+  text-decoration: none;
+  color:white;
+}
+
+/** Section Heading **/
+
+.sectionHeader {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.sectionHeader__title{
+  color: $color-sectionHeader;
+}
+
+/** Dividers / Horizontal Rule **/
+
+.horizontalRule {
+  flex-grow: 1;
+  border-bottom: 5px solid $color-horizontalRule;
+  margin-left: 20px;
+}
+
+.horizantalRule--dotted {
+  border-bottom: 1px;
+  color: $color-horizontalRule;
+  border-style: dotted;
+}
+ 
+.postMetadata {
+  color: grey;
+  padding: 1rem 0rem;
+  /* height: auto; */
+}
+.postMetadata__meta {
+  float: left;
+}
+.postMetadata__metaIcon {
+  margin:0.5rem;
+}
+
+/** Mobile stylesheet **/
+
+@import "Mobile";

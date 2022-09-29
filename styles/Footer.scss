@@ -1,0 +1,13 @@
+.pageFooter {
+  background-color: $color-primary;
+  color:white;
+  padding: 3rem 2rem;
+  text-align: center;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pageFooter__description {
+  padding:1rem;
+}

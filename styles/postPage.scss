@@ -1,0 +1,38 @@
+
+.slug {
+  font-size:1.1rem;
+  padding-top:5rem;
+  padding-bottom: 1rem;
+}
+
+.postHeader {
+  padding-bottom: 1rem;
+}
+.postHeader__title {
+  padding-bottom:1rem;
+  font-size: 2rem;
+}
+.postHeader__author {
+  font-size: 1.3rem;
+}
+.postHeader__authorArea {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.postContent {
+  font-size: 1rem;
+}
+.postContent > * {
+  padding: revert;
+  margin: revert;
+}
+.postContent p {
+  line-height:1.7rem;
+  margin:1rem 0rem;
+}
+.postContent img {
+  max-width: 100%;
+}

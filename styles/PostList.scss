@@ -1,0 +1,29 @@
+.postList__post {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem 0rem;
+  padding: 1rem 0rem;
+  /* border-radius: 1rem;  */
+  color: $color-text;
+}
+/*.postList__imgWrapper {
+  max-width: 200px;
+  width: 100%;
+}*/
+.postList__imgWrapper {
+/*   width: 200px;
+  height: 200px; */
+  max-width:200px;
+  position: relative;
+
+}
+.postList__img {
+  width: 100%;
+}
+.postList__postDetails {
+  padding:0rem 1rem;
+}
+.postList__postTitle {
+  padding-bottom: 1rem;
+  text-decoration: none;
+}

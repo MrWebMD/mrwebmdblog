@@ -1,0 +1,70 @@
+.nav {
+  color:white;
+  background-color: $color-primary;
+}
+
+.nav__topRow {
+  padding: 1rem 0rem;
+}
+
+.nav__bottomRow {
+  background-color: $color-secondary;
+}
+
+.nav__innerWrapper {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__list {
+  list-style-type: none;
+  display:flex;
+  flex-direction: row;
+  width:100%;
+}
+
+.nav__item {
+  padding:0.5rem;
+  margin:0;
+  flex-grow:1;
+  font-size:1rem;
+  transition: background 0.2s ease-in-out 0s;
+}
+
+.nav__menuBtn {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  font-size:1.7rem;
+  color:white;
+  cursor: pointer;
+  display: none;
+}
+
+.nav__item {
+    background: url(/assets/media/nav_bg.png) no-repeat left center;
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__item a {
+  color: white;
+}
+
+.nav__icon {
+  margin:0.1rem 0.6rem;
+  font-size:1.5rem;
+}
+
+.nav__item:last-child {
+  background: url(/assets/media/nav_bg.png) no-repeat left center,
+  url(/assets/media/nav_bg.png) no-repeat right center;
+}
+
+.nav__item:hover {
+  background-color: $color-secondary--darker;
+  cursor: pointer;
+}
