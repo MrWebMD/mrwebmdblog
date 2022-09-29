@@ -15,6 +15,6 @@ export default function NotFoundPage() {
   </Head>
   return <NotFound>
     <Image alt="Not founds" src="https://strapi.mrwebmd.com/uploads/undraw_taken_re_yn20_7fa44b4ad5.svg" width="250px" height="250px"></Image>
-    <h1>Oops, that page was not found. You can add it though because this project is <a href="https://github.com/MrWebMD" target="_blank" rel="noreferrer">open source</a>!</h1>
+    <h1>Oops, that page was not found. You can add it though because this project is <a href="https://github.com/MrWebMD/mrwebmdblog" target="_blank" rel="noreferrer">open source</a>!</h1>
   </NotFound>
 }

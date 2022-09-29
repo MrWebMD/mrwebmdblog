@@ -64,7 +64,10 @@ export async function getStaticPaths() {
     paths: postData.map(post => {
       return { params: { slug: post.slug } }
     }),
-    fallback: false
+    // fallback: false
+
+    // https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration
+    fallback: "blocking", // Render on demand if path doesn't exist
   }
 }
 
