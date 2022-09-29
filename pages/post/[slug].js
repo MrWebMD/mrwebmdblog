@@ -87,6 +87,8 @@ export async function getStaticProps({params}) {
     props: {
       postData: onePostData,
       recentPosts: recentFourPost
-    }
+    },
+
+    revalidate: 60 * 5,
   }
 }

@@ -54,7 +54,7 @@ const Navigation = () => {
           <li className="nav__item">Tutorials</li>
           <li className="nav__item">Forums</li>
           <li className="nav__item">
-            <a href="https://github.com/MrWebMD" rel="noreferrer" target="_blank">
+            <a href="https://github.com/MrWebMD/mrwebmdblog" rel="noreferrer" target="_blank">
               <i className="fa-brands fa-github nav__icon"></i>Github
             </a>
           </li>
