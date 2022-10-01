@@ -52,26 +52,26 @@ export default function PostView({postData, recentPosts}) {
   )
 }
 
-export async function getStaticPaths() {
+// export async function getStaticPaths() {
 
  
-  const res = await fetch(`${process.env.STRAPI_API_URL_INTERNAL}/posts`);
+//   const res = await fetch(`${process.env.STRAPI_API_URL_INTERNAL}/posts`);
 
- /** @type {Post[]} */
-  const postData = await res.json();
+//  /** @type {Post[]} */
+//   const postData = await res.json();
 
-  return {
-    paths: postData.map(post => {
-      return { params: { slug: post.slug } }
-    }),
-    // fallback: false
+//   return {
+//     paths: postData.map(post => {
+//       return { params: { slug: post.slug } }
+//     }),
+//     // fallback: false
 
-    // https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration
-    fallback: "blocking", // Render on demand if path doesn't exist
-  }
-}
+//     // https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration
+//     fallback: "blocking", // Render on demand if path doesn't exist
+//   }
+// }
 
-export async function getStaticProps({params}) {
+export async function getServerSideProps({params}) {
 
   const onePost = await fetch(`${process.env.STRAPI_API_URL_INTERNAL}/posts?slug=${encodeURIComponent(params.slug)}`);
 
@@ -92,6 +92,6 @@ export async function getStaticProps({params}) {
       recentPosts: recentFourPost
     },
 
-    revalidate: 60 * 5,
+    // revalidate: 60 * 5,
   }
 }
